@@ -3,21 +3,14 @@ const getJokes = () => {
       .then(res => res.json())
 }
 
-let cardSection;
-let cardContainer;
-let filter;
-let gigglesData;
 
-document.addEventListener("DOMContentLoaded", 
-function () {
-    cardSection = document.getElementsByClassName("card-section");
-    listContainer = document.getElementsByClassName("list-container");
-    filter = document.getElementById(" last joke id + 1,");
-    filter.addEventListener("change", function (event) {
-      const option = event.target.value;
-      selectGiggles(option);
-    });
 
-    loadGiggles("general");
-    loadGigglesList();
-  });
+
+const createJokeDiv = (joke) => { 
+  const jokeContainer = document.createElement('div')
+  const jokeContainerTitle = document.createElement('h2')
+  const setup = document.createElement('p')
+  const punchline = document.createElement('p')
+  const jokeRating = document.createElement('p')
+  const ratingInput = document.createElement('input')
+  const ratingBtn = document.createElement('button')
