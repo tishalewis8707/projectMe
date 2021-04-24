@@ -1,6 +1,5 @@
-<style>
+
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
-</style>
 
 *{
 margin: 0;
@@ -8,7 +7,7 @@ padding: 0;
 box-sizing: border-box;
 }
 html{
-    font-size: 10px;
+    font-size: 20px;
     font-family: 'Antonio', sans-serif;
 }
 body{
@@ -22,4 +21,31 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(29, 96, 102);
+    border-radius: 8px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: justify;
+}
+button{
+    margin-top: 4rem;
+    width: fit-content;
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
 }
