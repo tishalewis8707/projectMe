@@ -12,16 +12,10 @@ jokeBtn.addEventListener('click', () => {
 .then((data) => {
     console.log(data)
     jokeText.innerHTML = data.setup
+    jokePun.innerHTML = data.punchline
   })
 });
-
-
-
-
-
-
-
-
+ 
 
 
 
