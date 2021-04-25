@@ -1,19 +1,54 @@
-const button = document.querySelector('.container button');
-const jokeText = document.querySelector('.container p');
+const jokeBtn = document.getElementById('jokeBtn');
+const jokeText = document.getElementById('jokeText');
 
-document.addEventListener('DOMContentLoaded', getJoke);
+
+jokeBtn.addEventListener('click', () => {
+  console.log('clicked the button');
+  const url = 'https://official-joke-api.appspot.com/random_joke'
+  fetch(url) 
+  .then((res) => {
+      return res.json();
+  })
+.then((data) => {
+    console.log(data)
+    jokeText.innerHTML = data.setup
+  })
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//const button = document.querySelector('.container button');
+//const jokeText = document.querySelector('.container p');
+
+//document.addEventListener('DOMContentLoaded', getJoke);
  
-//fetch jokes from API
+//fetch jokes from 
 
-function getJoke(){
-  fetch(' https://icanhazdadjoke.com/',{
-    headers:{
-      'Accept': 'application/json'
-    }
-  }).then(Response=> Response.json())
-  .then(getJoke=> console.log(getJoke)
+//function getJoke(){
+  //fetch(' https://icanhazdadjoke.com/',{
+   // headers:{
+    //  'Accept': 'application/json'
+   // }
+  //}).then(Response=> Response.json())
+  //.then(getJoke=> console.log(getJoke)
 
-  )};
+  //)};
+
+//jokeText.innerHTML = getJoke;
 
 
 
