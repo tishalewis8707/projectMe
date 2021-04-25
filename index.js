@@ -2,7 +2,8 @@ const button = document.querySelector('.container button');
 const jokeText = document.querySelector('.container p');
 
 document.addEventListener('DOMContentLoaded', getJoke);
-
+ 
+//fetch jokes from API
 
 function getJoke(){
   fetch(' https://icanhazdadjoke.com/',{
